@@ -1,5 +1,5 @@
 # Turbo_Trainer_Generator_v2
-Spinner NXT stationary bike drives a 149kv BLDC outrunner via a flat belt. Regen is done by the VESC 
+Spinner NXT stationary bike drives a 149kv BLDC outrunner via a flat belt. Regen is done by the VESC6 and charges a battery.
 
 <ol>
 <li>I bought a second hand NXT Spin bike. They are well made with a heavy flywheel and an efficient single speed chain drive</li>
