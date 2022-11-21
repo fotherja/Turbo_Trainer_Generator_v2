@@ -10,6 +10,6 @@ Spinner NXT stationary bike drives a 149kv BLDC outrunner via a flat belt. Regen
 <li>The Pro-mini runs a PI controller which adjusts the requested braking torque such that a selected mechanical power is exerted on the crankshaft</li>
 <li>I took lots of measurments to arrive at calibrated crankshaft powers of 50, 100, 150, 200, 250, 300 Watts</li>
 <li>The regenerated power is fed into a 24V 20AH LiFePO4 battery (about 480Wh)</li>
-<li>When the battery is reaching full capacity I have a grid tie inverter which discharged the battery into the electrical grid</li> 
+<li>When the battery is reaching full capacity I switch on a connected grid tie inverter which discharges the battery into the electrical grid</li> 
 <li>This is an incredibly efficient setup - I'd challenge anyone to have a more efficient way of turning human power into electrical power!</li>
 </ol>
