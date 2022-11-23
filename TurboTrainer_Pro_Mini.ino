@@ -31,7 +31,7 @@
 
 //------------------------------------------------------------------------------------------------
 VescUart      VESC;                                                                               // VescUart class
-double        Setpoint, Power, BrakeCurrent, Target_Setpoint = 240.0;
+double        Setpoint, Power, BrakeCurrent, Target_Setpoint;
 MovingAverage <uint16_t, 8> ADC_Filter;
 
 double        Kp=0.0, Ki=0.5, Kd=0.0;                                                             // PID Tuning parameters
@@ -53,7 +53,7 @@ void setup()
   VESC.setSerialPort(&Serial); 
 
   myPID.SetSampleTime(50);
-  myPID.SetOutputLimits(0.0,25.0);  
+  myPID.SetOutputLimits(0.0,32.0);                                                                // Max current we can use to slow the motor - more than this and the belt might slip  
 
   pinMode(LED_PIN, OUTPUT);
 }
