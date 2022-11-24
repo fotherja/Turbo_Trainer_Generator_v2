@@ -102,15 +102,15 @@ void loop() {
   int Rotary_ADC = ADC_Filter.get();
 
   if(Rotary_ADC > 922)                                                                            // The VESC is only somewhat accurate. These are the required values based on my calibrations
-    Target_Setpoint = 45.0;                                                                       // This results in 50W mechanical pedal power
+    Target_Setpoint = 38.0;                                                                       // This results in 50W mechanical pedal power
   else if(Rotary_ADC > 718)
-    Target_Setpoint = 98.0;                                                                       // This results in 100W mechanical pedal power
+    Target_Setpoint = 94.0;                                                                       // This results in 100W mechanical pedal power
   else if(Rotary_ADC > 514)
     Target_Setpoint = 151.0;                                                                      // This results in 150W mechanical pedal power
   else if(Rotary_ADC > 308)
     Target_Setpoint = 207.0;                                                                      // This results in 200W mechanical pedal power
   else if(Rotary_ADC > 104)
-    Target_Setpoint = 267.0;                                                                      // This results in 250W mechanical pedal power
+    Target_Setpoint = 264.0;                                                                      // This results in 250W mechanical pedal power
   else
     Target_Setpoint = 320.0;                                                                      // This results in 300W mechanical pedal power
 }
